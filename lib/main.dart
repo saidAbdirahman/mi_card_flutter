@@ -15,7 +15,7 @@ class MyApp extends StatelessWidget {
       home: Scaffold(
         backgroundColor: Colors.blue,
         body: SafeArea(
-          child: Column(
+          child: Row(
             //it is used to shrink the column vertical | size to fit three children size
             //mainAxisSize: MainAxisSize.min,
 
@@ -30,20 +30,20 @@ class MyApp extends StatelessWidget {
             children: <Widget>[
               Container(
                 color: Colors.red,
-                height: 100.0,
+                width: 30.0,
                 child: Text('Container 1'),
               ),
               SizedBox(
-                height: 10.0,
+                width: 10.0,
               ),
               Container(
                 color: Colors.green,
-                height: 100.0,
+                width: 30.0,
                 child: Text('Container 3'),
               ),
               Container(
                 color: Colors.grey,
-                height: 100.0,
+                width: 30.0,
                 child: Text('Container 3'),
               ),
 
