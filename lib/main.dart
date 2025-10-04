@@ -17,7 +17,9 @@ class MyApp extends StatelessWidget {
         body: SafeArea(
           child: Column(
             //it is used to shrink the column vertical | size to fit three children size
-            mainAxisSize: MainAxisSize.min,
+            //mainAxisSize: MainAxisSize.min,
+            //used to push children up and down and the default is down
+            verticalDirection: VerticalDirection.up,
             children: <Widget>[
               Container(
                 color: Colors.red,
