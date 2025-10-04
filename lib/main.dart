@@ -26,29 +26,24 @@ class MyApp extends StatelessWidget {
             //mainAxisAlignment: MainAxisAlignment.spaceBetween,
 
             //it helps you to align your children to the right
-            crossAxisAlignment: CrossAxisAlignment.end,
+            crossAxisAlignment: CrossAxisAlignment.stretch,
             children: <Widget>[
               Container(
                 color: Colors.red,
-                width: 100.0,
                 height: 100.0,
                 child: Text('Container 1'),
               ),
               Container(
                 color: Colors.green,
-                width: 100.0,
                 height: 100.0,
                 child: Text('Container 3'),
               ),
               Container(
                 color: Colors.grey,
-                width: 100.0,
                 height: 100.0,
                 child: Text('Container 3'),
               ),
-              Container(
-                width: double.infinity,
-              )
+
             ],
           ),
         ),
