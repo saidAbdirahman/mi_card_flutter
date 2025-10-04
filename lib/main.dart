@@ -18,8 +18,12 @@ class MyApp extends StatelessWidget {
           child: Column(
             //it is used to shrink the column vertical | size to fit three children size
             //mainAxisSize: MainAxisSize.min,
+
             //used to push children up and down and the default is down
-            verticalDirection: VerticalDirection.up,
+            //verticalDirection: VerticalDirection.up,
+
+            //it controls the main axisis of the layout default start also it has center spaceBetween and others..
+            mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: <Widget>[
               Container(
                 color: Colors.red,
