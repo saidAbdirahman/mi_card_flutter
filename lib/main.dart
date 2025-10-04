@@ -15,13 +15,29 @@ class MyApp extends StatelessWidget {
       home: Scaffold(
         backgroundColor: Colors.blue,
         body: SafeArea(
-          child: Container(
-            color: Colors.white,
-            width: 100.0,
-            height: 100.0,
-            margin: EdgeInsets.all(50.0),
-            padding: EdgeInsets.only(top: 10.0),
-            child: Text('hello said'),
+          child: Column(
+            //it is used to shrink the column vertical | size to fit three children size
+            mainAxisSize: MainAxisSize.min,
+            children: <Widget>[
+              Container(
+                color: Colors.red,
+                width: 100.0,
+                height: 100.0,
+                child: Text('Container 1'),
+              ),
+              Container(
+                color: Colors.green,
+                width: 100.0,
+                height: 100.0,
+                child: Text('Container 3'),
+              ),
+              Container(
+                color: Colors.grey,
+                width: 100.0,
+                height: 100.0,
+                child: Text('Container 3'),
+              ),
+            ],
           ),
         ),
       ),
