@@ -23,7 +23,10 @@ class MyApp extends StatelessWidget {
             //verticalDirection: VerticalDirection.up,
 
             //it controls the main axisis of the layout default start also it has center spaceBetween and others..
-            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            //mainAxisAlignment: MainAxisAlignment.spaceBetween,
+
+            //it helps you to align your children to the right
+            crossAxisAlignment: CrossAxisAlignment.end,
             children: <Widget>[
               Container(
                 color: Colors.red,
@@ -43,6 +46,9 @@ class MyApp extends StatelessWidget {
                 height: 100.0,
                 child: Text('Container 3'),
               ),
+              Container(
+                width: double.infinity,
+              )
             ],
           ),
         ),
