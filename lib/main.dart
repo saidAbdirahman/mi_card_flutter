@@ -21,7 +21,13 @@ class MyApp extends StatelessWidget {
                 radius: 50.0,
                 backgroundColor: Colors.purple,
                 foregroundImage: AssetImage('images/profile.png'),
-              )
+              ),
+              Text(
+                "Said abdirahman",
+                style: TextStyle(
+                    fontSize: 40.0
+                ),
+              ),
             ],
           ),
         ),
