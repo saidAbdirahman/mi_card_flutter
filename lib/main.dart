@@ -69,23 +69,17 @@ class MyApp extends StatelessWidget {
                 padding: EdgeInsets.all(10.0),
                 margin: EdgeInsets.symmetric(vertical: 10.0, horizontal: 25.0),
                 color: Colors.white,
-                child: Row(
-                  children: [
-                    Icon(
-                      Icons.email,
-                      color: Colors.teal.shade100,
-                    ),
-                    SizedBox(
-                      width: 10.0
-                    ),
-                    Text('saidyare447@gmail.com',
+                child: ListTile(
+                  leading: Icon(
+                    Icons.email,
+                    color: Colors.teal.shade100,
+                  ),
+                  title: Text('saidyare447@gmail.com',
                       style: TextStyle(
                           fontFamily: 'Source sans',
                           fontSize: 20.0,
                           color: Colors.teal.shade100
                       ),
-                    )
-                  ],
                 ),
               ),
             ],
@@ -106,3 +100,4 @@ class MyApp extends StatelessWidget {
 //mainAxisAlignment: MainAxisAlignment.spaceBetween,
 
 //it helps you to align your children to the right
+
