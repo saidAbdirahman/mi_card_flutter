@@ -40,26 +40,29 @@ class MyApp extends StatelessWidget {
                 ),
               ),
               Card(
-               
+
                 margin: EdgeInsets.symmetric(vertical: 10.0, horizontal: 25.0),
                 color: Colors.white,
-                child: Row(
-                  children: [
-                    Icon(
-                      Icons.phone,
-                      color: Colors.teal.shade100,
-                    ),
-                    SizedBox(
-                      width: 10.0
-                    ),
-                    Text('+252 61 3103346',
-                      style: TextStyle(
-                        fontFamily: 'Source sans',
-                        fontSize: 20.0,
-                        color: Colors.teal.shade100
+                child: Padding(
+                  padding: EdgeInsets.all(10.0),
+                  child: Row(
+                    children: [
+                      Icon(
+                        Icons.phone,
+                        color: Colors.teal.shade100,
                       ),
-                    )
-                  ],
+                      SizedBox(
+                        width: 10.0
+                      ),
+                      Text('+252 61 3103346',
+                        style: TextStyle(
+                          fontFamily: 'Source sans',
+                          fontSize: 20.0,
+                          color: Colors.teal.shade100
+                        ),
+                      )
+                    ],
+                  ),
                 ),
               ),
               Container(
