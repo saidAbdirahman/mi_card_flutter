@@ -40,33 +40,23 @@ class MyApp extends StatelessWidget {
                 ),
               ),
               Card(
-
                 margin: EdgeInsets.symmetric(vertical: 10.0, horizontal: 25.0),
                 color: Colors.white,
-                child: Padding(
-                  padding: EdgeInsets.all(10.0),
-                  child: Row(
-                    children: [
-                      Icon(
-                        Icons.phone,
-                        color: Colors.teal.shade100,
-                      ),
-                      SizedBox(
-                        width: 10.0
-                      ),
-                      Text('+252 61 3103346',
-                        style: TextStyle(
-                          fontFamily: 'Source sans',
-                          fontSize: 20.0,
-                          color: Colors.teal.shade100
-                        ),
-                      )
-                    ],
+                child: ListTile(
+                  leading: Icon(
+                    Icons.phone,
+                    color: Colors.teal.shade100,
                   ),
+                  title: Text('+252 61 3103346',
+                    style: TextStyle(
+                        fontFamily: 'Source sans',
+                        fontSize: 20.0,
+                        color: Colors.teal.shade100
+                    ),
                 ),
               ),
-              Container(
-                padding: EdgeInsets.all(10.0),
+              ),
+              Card(
                 margin: EdgeInsets.symmetric(vertical: 10.0, horizontal: 25.0),
                 color: Colors.white,
                 child: ListTile(
@@ -81,6 +71,7 @@ class MyApp extends StatelessWidget {
                           color: Colors.teal.shade100
                       ),
                 ),
+              ),
               ),
             ],
           ),
@@ -100,4 +91,3 @@ class MyApp extends StatelessWidget {
 //mainAxisAlignment: MainAxisAlignment.spaceBetween,
 
 //it helps you to align your children to the right
-
